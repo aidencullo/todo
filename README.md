@@ -1,2 +1,2 @@
 # websites
-a few webpages with vue
+a few basic webpages templates with vue and angular
