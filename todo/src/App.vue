@@ -2,10 +2,10 @@
   
 <div id="page" :style="{ backgroundColor: darkMode ?
 		       'black': 'white' }">
-  <NavBar @test="darkMode=!darkMode"/>
-
+  <NavBar @toggleDarkMode="darkMode=!darkMode"/>
+  
   <div class="text-center">
-  <router-view/>
+    <router-view/>
   </div>
 </div>
   

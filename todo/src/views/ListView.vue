@@ -7,14 +7,8 @@
 	       bg-gradient-to-r
 	       to-emerald-600
 	       from-sky-400">
-    The Todo List You Need
+    Todo
   </span>
 </h1>
-
-<p class="text-lg font-normal text-gray-500 lg:text-xl
-	  dark:text-gray-400">
-  Make your perfect todo list tailored to
-  your liking!
-</p>
 
 </template>
