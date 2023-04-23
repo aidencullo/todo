@@ -1,5 +1,7 @@
 <template>
-    <span class="text-3xl font-bold underline">
-      Hello world!
-    </span>
+    <div class="text-center">
+      <router-link :to="{ name:'home'}">Home</router-link> |
+      <router-link :to="{ name:'about'}">About</router-link>
+    <router-view/>
+    </div>
 </template>
