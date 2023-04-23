@@ -1,9 +1,14 @@
 <template>
+  
 <div id="page" :style="{ backgroundColor: darkMode ?
 		       'black': 'white' }">
   <NavBar @test="darkMode=!darkMode"/>
+
+  <div class="text-center">
   <router-view/>
+  </div>
 </div>
+  
 </template>
 
 <script setup>
