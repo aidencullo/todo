@@ -1,14 +1,20 @@
 <template>
-  <NavBar/>
-    <router-view/>
+<div id="page" :style="{ backgroundColor: darkMode ?
+		       'black': 'white' }">
+  <NavBar @test="darkMode=!darkMode"/>
+  <router-view/>
+</div>
 </template>
 
-<style>
-body {
-  background-color: black;
-}
-</style>
-
 <script setup>
+  import { ref } from 'vue';
   import NavBar from '@/components/NavBar.vue';
-  </script>
+
+  const darkMode = ref(true);
+</script>
+
+<style>
+  #page {
+  min-height: 100vh;
+  }
+</style>
