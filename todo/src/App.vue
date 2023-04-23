@@ -1,7 +1,14 @@
 <template>
-    <div class="text-center">
-      <router-link :to="{ name:'home'}">Home</router-link> |
-      <router-link :to="{ name:'about'}">About</router-link>
+  <NavBar/>
     <router-view/>
-    </div>
 </template>
+
+<style>
+body {
+  background-color: black;
+}
+</style>
+
+<script setup>
+  import NavBar from '@/components/NavBar.vue';
+  </script>
